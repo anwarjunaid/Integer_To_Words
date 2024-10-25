@@ -6,17 +6,17 @@ void getResult(int, int, char[][6], int*);
 int tenToNineteen(int);
 
 int main(){
-    int num, digits;
+    int num, no_of_digits;
     scanf("%d",&num);
     if(num == 100000){
         printf("One Lakh\n");
         return 0;
     }
     char ones[10][6] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
-    digits = counter(num);
-    int digitsArr[digits];
-    getDigitsInArray(digitsArr, num, digits);
-    getResult(digits, num, ones, digitsArr);
+    no_of_digits = counter(num);
+    int digitsArr[no_of_digits];
+    getDigitsInArray(digitsArr, num, no_of_digits);
+    getResult(no_of_digits, num, ones, digitsArr);
     return 0;
 }
 
